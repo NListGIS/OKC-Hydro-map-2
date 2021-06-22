@@ -24,39 +24,39 @@ var wms_layers = [];
                 url: 'https://mt1.google.com/vt/lyrs=t&x={x}&y={y}&z={z}'
             })
         });
-var lyr_n35_w098_1arc_v3_2 = new ol.layer.Image({
+var lyr_DEM_2 = new ol.layer.Image({
                             opacity: 1,
-                            title: "n35_w098_1arc_v3",
+                            title: "DEM",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/n35_w098_1arc_v3_2.png",
+                               url: "./layers/DEM_2.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
                                 imageExtent: [-10909325.558781, 4163862.269635, -10797975.145907, 4300640.482958]
                             })
                         });
-var lyr_DEM_Fill_Wang_Liu_3 = new ol.layer.Image({
+var lyr_FillSink_3 = new ol.layer.Image({
                             opacity: 1,
-                            title: "DEM_Fill_Wang_Liu",
+                            title: "Fill Sink",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/DEM_Fill_Wang_Liu_3.png",
+                               url: "./layers/FillSink_3.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
                                 imageExtent: [-10909325.558782, 4163862.269634, -10797975.137000, 4300640.493967]
                             })
                         });
-var lyr_Watershed_Wang_Liu_4 = new ol.layer.Image({
+var lyr_Watershed_4 = new ol.layer.Image({
                             opacity: 1,
-                            title: "Watershed_Wang_Liu",
+                            title: "Watershed",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/Watershed_Wang_Liu_4.png",
+                               url: "./layers/Watershed_4.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
@@ -64,5 +64,5 @@ var lyr_Watershed_Wang_Liu_4 = new ol.layer.Image({
                             })
                         });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_GoogleTerrain_1.setVisible(true);lyr_n35_w098_1arc_v3_2.setVisible(true);lyr_DEM_Fill_Wang_Liu_3.setVisible(true);lyr_Watershed_Wang_Liu_4.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_GoogleTerrain_1,lyr_n35_w098_1arc_v3_2,lyr_DEM_Fill_Wang_Liu_3,lyr_Watershed_Wang_Liu_4];
+lyr_OpenStreetMap_0.setVisible(true);lyr_GoogleTerrain_1.setVisible(true);lyr_DEM_2.setVisible(true);lyr_FillSink_3.setVisible(true);lyr_Watershed_4.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_GoogleTerrain_1,lyr_DEM_2,lyr_FillSink_3,lyr_Watershed_4];
